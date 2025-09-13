@@ -29,10 +29,10 @@ public class BinaryTree {
         //first time take root and for the others take left or right
         papulate(scanner,root);
     }
-    private void papulate(Scanner scanner,Node node){
+    private void papulate(Scanner scanner,Node node){//left right  chaining elplanation
         System.out.println("Do you want to insert left of "+ node.value);
         boolean left=scanner.nextBoolean();//true means on left side false means i don't want insert left
-        if(left){//so if left says thenn
+        if(left){//so if left says thenn //nn for explanation of papulate method
             System.out.println("Enter the Left value of: "+ node.value);
             int val=scanner.nextInt();
             node.left=new Node(val);//new node created and chain maked
