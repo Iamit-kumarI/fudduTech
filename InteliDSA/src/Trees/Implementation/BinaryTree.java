@@ -32,7 +32,7 @@ public class BinaryTree {
     private void papulate(Scanner scanner,Node node){
         System.out.println("Do you want to insert left of "+ node.value);
         boolean left=scanner.nextBoolean();//true means on left side false means i don't want insert left
-        if(left){//so if left says then
+        if(left){//so if left says thenn
             System.out.println("Enter the Left value of: "+ node.value);
             int val=scanner.nextInt();
             node.left=new Node(val);//new node created and chain maked
