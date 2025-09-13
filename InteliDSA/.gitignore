@@ -31,3 +31,7 @@ bin/
 #git remote add origin https://github.com/Iamit-kumarI/fudduTech.git
 #git branch -M main
 #git push -u origin main
+############# Real #################
+#git add .
+#git commit -m "your message"
+#git push
