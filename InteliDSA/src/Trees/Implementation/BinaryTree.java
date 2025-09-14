@@ -64,4 +64,30 @@ public class BinaryTree {
             papulate(scanner,node.right);
         }
     }
+    public void display(){
+        display(root," ");
+    }
+    private void display(Node node,String indent){
+        if(node==null)return;
+        System.out.println(indent+node.value);
+        display(node.left,indent+"\t");
+        display(node.right,indent+"\t");
+    }
+    public void prettyDisplay(){
+        prettyDisplay(root,0);
+    }
+    private void prettyDisplay(Node node,int spaceLevel){
+        if(node==null)return;
+        prettyDisplay(node.right,spaceLevel+1);
+        if(spaceLevel!=0){
+            for(int i=0;i<spaceLevel-1;i++){
+                System.out.print("|\t\t");
+            }
+            System.out.println("|-------->"+node.value);
+        }else{
+            System.out.println(node.value);
+        }
+        prettyDisplay(node.left,spaceLevel+1);
+
+    }
 }
