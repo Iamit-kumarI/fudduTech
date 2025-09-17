@@ -30,7 +30,7 @@ public class BinarySearchTree {
         return root==null;
     }
     public void display(){
-       display(root,"Root Node");
+       display(this.root,"Root Node: ");
     }
     private void display(Node node,String info){
         if(node==null)return;
@@ -68,6 +68,11 @@ public class BinarySearchTree {
         * height +1
         * */
         return node;//whatever the currect node where we are at the call each time
+    }
+    public void papulate(int [] nums){
+        for(int num:nums){
+            this.insert(num);
+        }
     }
     public boolean balanced(){
         return balanced(root);
