@@ -69,10 +69,23 @@ public class BinarySearchTree {
         * */
         return node;//whatever the currect node where we are at the call each time
     }
-    public void papulate(int [] nums){
+    /*this case if the array is sorted then it will get into skwed tree which will be O(N) not
+    * go so either we can used balancing tree or we can take mid or array each time and pass
+    * left of mid and right of mid so this way we can do insert sorted array in tree*/
+    /*public void papulate(int [] nums){
         for(int num:nums){
             this.insert(num);
         }
+    }*/
+    public void papulateSorted(int[]nums){
+        papulateSorted(nums,0,nums.length-1);
+    }
+    private void papulateSorted(int []nums,int s,int e){
+        if(s>e) return;
+        int mid=s+(e-s)/2;
+        this.insert(nums[mid]);
+        papulateSorted(nums,s,mid-1);
+        papulateSorted(nums,mid+1,e);
     }
     public boolean balanced(){
         return balanced(root);
