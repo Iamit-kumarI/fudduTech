@@ -47,7 +47,7 @@ public class BinarySearchTree {
     * automatically manages by the tree
     * */
     public void insert(int val){
-
+        root=insert(val,root);
     }
     private Node insert(int value,Node node){
         if(node==null){
