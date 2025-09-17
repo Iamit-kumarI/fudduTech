@@ -121,6 +121,16 @@ public class BinarySearchTree {
         preOrderTraversal(node.left);
         preOrderTraversal(node.right);
     }
+    public void inOrderTraversal(){
+        preOrderTraversal(root);
+    }
+    public void inOrderTraversal(Node node){
+        if(node==null)return;
+        //System.out.print(node.getValue()+" ");
+        inOrderTraversal(node.left);
+        System.out.print(node.getValue()+" ");
+        inOrderTraversal(node.right);
+    }
 
 }
 
