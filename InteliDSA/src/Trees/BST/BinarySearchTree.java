@@ -112,5 +112,14 @@ public class BinarySearchTree {
          */
         return Math.abs(height(node.left)-height(node.right))<=1&&balanced(node.left)&&balanced(node.right);
     }
+    public void preOrderTraversal(){
+        preOrderTraversal(root);
+    }
+    public void preOrderTraversal(Node node){
+        if(node==null)return;
+        System.out.print(node.getValue()+" ");
+        preOrderTraversal(node.left);
+        papulateSorted(node.right);
+    }
 }
 
