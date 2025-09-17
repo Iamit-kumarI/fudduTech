@@ -47,7 +47,26 @@ public class BinarySearchTree {
     * automatically manages by the tree
     * */
     public void insert(int val){
-        
+
+    }
+    private Node insert(int value,Node node){
+        if(node==null){
+            node=new Node(value);
+            return node;
+        }
+        if(value<node.value){
+            node.left=insert(value,node.left);
+        }
+        if(value>node.value){
+            node.right=insert(value,node.right);
+        }
+        node.height=Math.max(height(node.left),height(node.right))+1;
+        /*
+        * since here we have added the element so height is going to +1 but to decide
+        * what is going to the actual height we have to find max height then do
+        * height +1
+        * */
+        return node;//whatever the currect node where we are at the call each time
     }
 
 
