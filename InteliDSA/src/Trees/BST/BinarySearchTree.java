@@ -1,4 +1,5 @@
 package Trees.BST;
+import java.lang.Math;
 
 public class BinarySearchTree {
     private class Node{
@@ -68,6 +69,30 @@ public class BinarySearchTree {
         * */
         return node;//whatever the currect node where we are at the call each time
     }
+    public boolean balanced(){
+        return balanced(root);
+    }
+    private boolean balanced(Node node){
+        if(node==null)return true;
+        /*
+            int leftHeight=height(node.left);
+            int rightHeight=height(node.right);  this
+         */
+        /*while checking if the tree is balanced return true
+        so the condition is each level there should be height diff not more than 0,1 means
+        the diff can be either 0 or 1 <=1 at each node
 
-
+        this is the check for each level so one we have checkd for one node then do check its
+        node.left
+        node.right
+        recursively
+        while so keep going till we each that particular call node.left==null so return true only that
+        call is ended later go right for that same node and keep going till we traverse each node's
+        left
+        right
+        at the end return true or false by checking if level if <=1
+         */
+        return Math.abs(height(node.left)-height(node.right))<=1&&balanced(node.left)&&balanced(node.right);
+    }
 }
+
