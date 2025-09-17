@@ -119,7 +119,8 @@ public class BinarySearchTree {
         if(node==null)return;
         System.out.print(node.getValue()+" ");
         preOrderTraversal(node.left);
-        papulateSorted(node.right);
+        preOrderTraversal(node.right);
     }
+
 }
 
