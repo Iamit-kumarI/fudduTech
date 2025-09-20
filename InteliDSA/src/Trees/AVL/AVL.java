@@ -1,16 +1,14 @@
 package Trees.AVL;
-
+/*
+* AVL is an enample of self balanced binary
+* tree example
+* this always make sure O(N) -> O(longN)
+*
+* like when tree gets unbalanced it balanced
+* it self by AVL algorithm
+* */
+import java.lang.Math;
 public class AVL {
-    public class Node{
-        int value;
-        Node left;
-        Node right;
-        int heigth;
-        public Node(int val){
-            this.value=val;
-        }
-        public int getValue(){
-            return this.value;
-        }
-    }
+    
 }
+
