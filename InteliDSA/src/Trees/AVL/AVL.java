@@ -137,31 +137,37 @@ public class AVL {
         return Math.abs(height(node.left)-height(node.right))<=1&&balance(node.left)&&balance(node.right);
     }
     public void preOrder(){
+        System.out.print("preOrder: ");
         preOrder(root);
+        System.out.println();
     }
     private void preOrder(Node node){
         if(node==null)return;
-        System.out.println(node.getValue()+" ");
+        System.out.print(node.getValue()+" ");
         preOrder(node.left);
         preOrder(node.right);
     }
     public void inOrder(){
+        System.out.print("inOrder: ");
         inOrder(root);
+        System.out.println();
     }
     private void inOrder(Node node){
         if(node==null)return;
         inOrder(node.left);
-        System.out.println(node.getValue()+" ");
+        System.out.print(node.getValue()+" ");
         inOrder(node.right);
     }
     public void postOrder(){
+        System.out.print("postOrder: ");
         postOrder(root);
+        System.out.println();
     }
     private void postOrder(Node node){
         if(node==null)return;
         postOrder(node.left);
         postOrder(node.right);
-        System.out.println(node.getValue()+" ");
+        System.out.print(node.getValue()+" ");
     }
 }
 
