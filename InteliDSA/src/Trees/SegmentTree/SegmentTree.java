@@ -39,5 +39,27 @@ public class SegmentTree {
         node.data=node.left.data+node.right.data;//27 comes from 3 and 24 right see the case tree
         return node;
     }
+    public void display(){
+        display(this.root);
+    } private void display(Node node){
+        String str="";
+        if(node.left!=null){
+            str=str+" Interval ["+node.left.startInterval+" , "+node.left.endInterval+" ] data: "+node.left.data+" => ";
+        }else{
+            str+="No left child";
+        }
+        //for current node
+        str=str+" Interval ["+node.startInterval+" , "+node.endInterval+" ] data: "+node.data+" <= ";
+
+        if(node.right!=null){
+            str=str+" Interval ["+node.right.startInterval+" , "+node.right.endInterval+" ] data: "+node.right.data+" => ";
+        }else{
+            str+="No right child";
+        }
+        System.out.println(str);
+        //now just call recursion
+        if(node.left!=null) display(node.left);
+        if(node.right!=null)display(node.right);
+    }
 
 }
