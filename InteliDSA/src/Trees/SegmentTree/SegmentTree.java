@@ -36,6 +36,7 @@ public class SegmentTree {
         *so it will be retrun from where it was called then chain created
         *  */
         node.right=this.constructTree(arr,mid+1,end);
+        //change this +,-,* what ever you want it will return the ans in O(logN)
         node.data=node.left.data+node.right.data;//27 comes from 3 and 24 right see the case tree
         return node;
     }
@@ -61,6 +62,46 @@ public class SegmentTree {
         //now just call recursion
         if(node.left!=null) display(node.left);
         if(node.right!=null)display(node.right);
+    }
+    public int query(int qsi,int qei){
+        /*
+        * qsi:        query start index
+        * qei:        query end index
+        * */
+        return this.query(root,qsi,qei);
+    }
+    private int query(Node node,int qsi,int qei){
+        if(node.startInterval>=qsi&&node.endInterval<=qei){
+            //4,5 case or 2,3 case
+            //completely lying inside the query case need to return all the items
+            return node.data;
+        }else if(node.startInterval>qei||node.endInterval<qsi){
+            //0,1 case 7,7 case
+            //completely outside no nothing have
+            return 0;
+        }else{
+            //if nothing satisfy means 2-6 may have 0-3 or 6-7 so need to make calls
+            return this.query(node.left,qsi,qei)+this.query(node.right,qsi,qei);//left for 0-3 right for 6-7
+        }
+    }
+    public void update(int index,int value){
+        update(this.root,index,value);
+    }
+    private int update(Node node,int index,int value){
+        if(index>=node.startInterval&&index<=node.endInterval){
+            //workable case
+            if(index==node.startInterval&&index==node.endInterval){
+                //find the index to update
+                node.data=value;
+                return node.data;
+            }else{//case have few 0-3 we want 2 so we have to go inside that case is for that
+                int leftAns=update(node.left,index,value);
+                int rightAns=update(node.right,index,value);
+                node.data=leftAns+rightAns;
+                return node.data;
+            }
+        }
+        return node.data;//the completely outside case
     }
 
 }
