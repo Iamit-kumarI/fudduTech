@@ -41,7 +41,8 @@ public class SegmentTree {
     }
     public void display(){
         display(this.root);
-    } private void display(Node node){
+    }
+    private void display(Node node){
         String str="";
         if(node.left!=null){
             str=str+" Interval ["+node.left.startInterval+" , "+node.left.endInterval+" ] data: "+node.left.data+" => ";
