@@ -54,11 +54,11 @@ public class SegmentTree {
         str=str+" Interval ["+node.startInterval+" , "+node.endInterval+" ] data: "+node.data+" <= ";
 
         if(node.right!=null){
-            str=str+" Interval ["+node.right.startInterval+" , "+node.right.endInterval+" ] data: "+node.right.data+" => ";
+            str=str+" Interval ["+node.right.startInterval+" , "+node.right.endInterval+" ] data: "+node.right.data;
         }else{
             str+="No right child";
         }
-        System.out.println(str);
+        System.out.println(str+"\n");
         //now just call recursion
         if(node.left!=null) display(node.left);
         if(node.right!=null)display(node.right);
