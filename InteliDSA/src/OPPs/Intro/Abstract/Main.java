@@ -7,5 +7,7 @@ public class Main {
 
         Dougther dougther=new Dougther();
         dougther.partner("hello",22);
+        System.out.println("Java Runtime version: " + System.getProperty("java.version"));
+
     }
 }
