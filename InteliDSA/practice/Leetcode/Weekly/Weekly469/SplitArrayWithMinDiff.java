@@ -13,7 +13,7 @@ public class SplitArrayWithMinDiff {
         for(int i=0;i<len-1;i++){
             int []leftside=Arrays.copyOfRange(nums,0,i+1);
             int []rightside=Arrays.copyOfRange(nums,i+1,len);
-            if(isValid(leftside)&&isValid(rightside)){
+            if(isIncreasing(leftside)&&isDecresing(rightside)){
                 int leftsum=sum(leftside);
                 int rightsum=sum(rightside);
 //                if(leftsum>rightsum)abssum =leftsum;
