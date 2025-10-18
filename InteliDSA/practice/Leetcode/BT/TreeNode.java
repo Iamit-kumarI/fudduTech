@@ -1,7 +1,6 @@
 package Leetcode.BT;
 
-public class TeeNode {
-    public class TreeNode {
+public class TreeNode {
        int val;
        TreeNode left;
        TreeNode right;
@@ -12,5 +11,4 @@ public class TeeNode {
            this.left = left;
            this.right = right;
        }
-   }
 }
