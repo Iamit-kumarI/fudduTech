@@ -12,6 +12,5 @@ public class POTD1716 {
         int today=start+(currentDayValue-1);
         if(currentDayValue==7)return today+sum(n-1,1,start+1);
         return today+sum(n-1,currentDayValue+1,start);
-
     }
 }
