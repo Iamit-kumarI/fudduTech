@@ -48,6 +48,7 @@ Explanation:
  */
 
 import java.util.Arrays;
+//gpt solution
 public class Q3 {
     public static int countStableSubarrays(int[] capacity) {
         int n = capacity.length;
