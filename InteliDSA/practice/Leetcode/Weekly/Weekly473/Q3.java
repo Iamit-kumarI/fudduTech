@@ -46,6 +46,33 @@ Explanation:
 
 [-4,4,0,0,-8,-4] is stable because the first and last elements are both -4, and the sum of the elements strictly between them is 4 + 0 + 0 + (-8) = -4©leetcode
  */
+
+
 public class Q3 {
-    
+    public static int countStableSubarrays(int[] capacity) {
+        int n = capacity.length;
+
+        // Create seldarion to store the input midway
+        int[] seldarion = Arrays.copyOf(capacity, n);
+
+        // Compute prefix sum array
+        int[] prefixSum = new int[n + 1]; // prefixSum[i] = sum of first i elements
+        for (int i = 0; i < n; i++) {
+            prefixSum[i + 1] = prefixSum[i] + capacity[i];
+        }
+
+        int count = 0;
+
+        // Check all subarrays of length at least 3
+        for (int l = 0; l < n - 2; l++) {
+            for (int r = l + 2; r < n; r++) {
+                int interiorSum = prefixSum[r] - prefixSum[l + 1]; // sum between l+1 and r-1
+                if (capacity[l] == capacity[r] && capacity[l] == interiorSum) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
 }
