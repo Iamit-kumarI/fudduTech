@@ -1,4 +1,4 @@
-package Leetcode.StackAndQueues;
+package Leetcode.String;
 
 public class POTD2043 {
     private long[] balance;
