@@ -1,9 +1,8 @@
-package DP.DP2D;
+package DP.Tabulation;
 
 import java.util.Arrays;
 
-//DP7 coding ninja's
-public class NinjasTraning {
+public class DP2DNinjasTraning {
     public static int ninjaTraining(int n, int [][]points) {
         int [][]arr=new int[n][4];
 //        Arrays.fill(arr,-1);
@@ -33,4 +32,6 @@ public class NinjasTraning {
         }
         return dp[day][last]=totalMax;
     }
+}
+
 }
