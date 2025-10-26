@@ -47,6 +47,7 @@ Explanation:
 [-4,4,0,0,-8,-4] is stable because the first and last elements are both -4, and the sum of the elements strictly between them is 4 + 0 + 0 + (-8) = -4©leetcode
  */
 
+/*
 import java.util.Arrays;
 //gpt solution
 public class Q3 {
@@ -77,3 +78,4 @@ public class Q3 {
         return count;
     }
 }
+ */
