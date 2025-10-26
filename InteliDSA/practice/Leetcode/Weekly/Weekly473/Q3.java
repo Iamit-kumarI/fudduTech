@@ -1,6 +1,6 @@
 package Leetcode.Weekly.Weekly473;
 // need to solve
-// don't watch solution untill solved 
+// don't watch solution untill solved
 /*
 Q3. Stable Subarrays With Equal Boundary and Interior Sum
 Medium
