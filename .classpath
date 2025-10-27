@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Tree/BFS/|Leetcode/BT/|Codeforces/ContextGlobalDev1Dev2/" kind="src" path="InteliDSA/practice"/>
+	<classpathentry kind="src" path="InteliDSA/practice/Codeforces/ContextGlobalDev1Dev2"/>
+	<classpathentry kind="src" path="InteliDSA/practice/Leetcode/BT"/>
+	<classpathentry kind="src" path="InteliDSA/practice/Tree/BFS"/>
+	<classpathentry kind="src" path="InteliDSA/Project"/>
+	<classpathentry kind="src" path="InteliDSA/src"/>
+	<classpathentry kind="output" path="InteliDSA/out/production/InteliDSA"/>
+</classpath>
