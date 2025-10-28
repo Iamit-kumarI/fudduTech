@@ -10,5 +10,6 @@ public class ReverseArray {
         if(index==arr.length-1)return sum;
 //        sum+=arr[index];
         return helper(arr,index+1,sum+arr[index]);
+
     }
 }
