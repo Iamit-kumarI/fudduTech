@@ -1,4 +1,4 @@
-package Leetcode.Randome;
+package Leetcode.Randome.Old;
 
 import java.util.Arrays;
 
