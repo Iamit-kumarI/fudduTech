@@ -1,0 +1,11 @@
+⭐ MOST USEFUL: The Mental Flow
+
+Whenever you see a DP problem, ask:
+
+Step 1 — Is it take/skip? → subsequence template
+Step 2 — Order doesn't matter? → subset/knapsack DP
+Step 3 — Do states depend on remainder/value? → prefix/gcd/xor DP
+Step 4 — Are we comparing two strings? → LCS/edit DP
+Step 5 — Subarray with partitions? → interval DP
+Step 6 — Subset enumerations? → bitmask DP
+Step 7 — Counting numbers between ranges? → digit DP
