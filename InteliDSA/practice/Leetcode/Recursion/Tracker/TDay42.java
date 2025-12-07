@@ -1,4 +1,4 @@
-package Leetcode.Recursion;
+package Leetcode.Recursion.Tracker;
 
 public class TDay42 {
     public static void main(String[] args) {
