@@ -17,7 +17,7 @@ public class DynamicQueue {
         end%=arr.length;
         size++;
     }
-    public int pop(){
+    public int poll(){
         if(isEmpty()){
             System.out.print("Can't pop from empty Queue ");
             return -1;

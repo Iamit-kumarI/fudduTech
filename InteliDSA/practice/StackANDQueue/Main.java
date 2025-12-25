@@ -24,21 +24,21 @@ public class Main {
         stack.display();
 
         // Queue
-        System.out.println("__________________________QUEUE________________________");
-        DynamicQueue queue=new DynamicQueue();
-        queue.offer(10);
-        queue.offer(20);
-        queue.offer(30);
-        queue.offer(40);
-        queue.display();
-        System.out.println(queue.pop());
-        queue.offer(50);
-        queue.offer(60);
-        queue.offer(70);
-        queue.offer(80);
-
-        queue.display();
-        System.out.println(queue.pop());
-        queue.display();
+//        System.out.println("__________________________QUEUE________________________");
+//        DynamicQueue queue=new DynamicQueue();
+//        queue.offer(10);
+//        queue.offer(20);
+//        queue.offer(30);
+//        queue.offer(40);
+//        queue.display();
+//        System.out.println(queue.poll());
+//        queue.offer(50);
+//        queue.offer(60);
+//        queue.offer(70);
+//        queue.offer(80);
+//
+//        queue.display();
+//        System.out.println(queue.poll());
+//        queue.display();
     }
 }
