@@ -1,4 +1,4 @@
-package Collection.LikedList;
+package Collection.List.LikedList;
 import java.util.LinkedList;
 public class Intro {
     public static void main(String[] args) {

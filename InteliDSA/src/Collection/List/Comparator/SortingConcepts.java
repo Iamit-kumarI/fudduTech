@@ -1,4 +1,4 @@
-package Collection.Comparator;
+package Collection.List.Comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
