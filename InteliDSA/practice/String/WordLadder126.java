@@ -8,7 +8,8 @@ public class WordLadder126 {
 //    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
 //        if(!wordList.contains(endWord))return 0;
 //        Set<String > visited=new HashSet<>();
-//        Queue<String>queue=new LinkedList<>();
+//        Queue<String>queue=new
+//        LinkedList<>();
 //        queue.offer(beginWord);
 //        int len=0;
 //        while(!queue.isEmpty()){
