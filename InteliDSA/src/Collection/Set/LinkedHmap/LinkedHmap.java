@@ -10,5 +10,8 @@ public class LinkedHmap {
         lmap.put("uer",2);
         lmap.put("woefh",3);
         System.out.println(lmap);
+        System.out.println(lmap.getOrDefault("wei",0));
+        lmap.putIfAbsent("apple",4);
+        System.out.println(lmap);
     }
 }
