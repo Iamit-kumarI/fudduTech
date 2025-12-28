@@ -16,6 +16,7 @@ public class LRUImplementation {
         map.put("Puja",7);
         System.out.println(map);
         map.put("Modi",11);// as modi comes amit goes out this is LRU
+        System.gc();//calls the garbage collector it dosent have refrence her but i have written
         System.out.println(map);
     }
 }
