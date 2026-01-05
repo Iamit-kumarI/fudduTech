@@ -35,7 +35,9 @@ public class Operation {
         System.out.println(Stream.iterate(1,x->x+1).skip(3).limit(15).toList());
 
         // ________________________ StateFull && StateLess Operation _______________________
-        
+        //stateless -> don't know what happen with others just doing where currently at
+        //statefull -> like sorted knows what was the last element, like distinct
+
     }
 
 }
