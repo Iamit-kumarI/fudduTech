@@ -40,10 +40,19 @@ public class Operation {
 
         //7. peek like forEach but it never terminate the process(its not a teminaloperation)
         Stream.iterate(1,x->x+1).limit(100).peek(System.out::print).count();//peek is like for each but i dosent terminalte the process
-
+        System.out.println();
         //8. flatMap
         //handle streams of collections, lists, or arrays, where each element itself is a collection
-        
+        //Flatten nested structers (list of list) it used to flatten into a sisngle list
+        //Transform and flattern  at same time
+        List<List<String >>list4=Arrays.asList(
+                Arrays.asList("apple","banana"),
+                Arrays.asList("orange","kiwi"),
+                Arrays.asList("pear","grape")
+        );
+        List<String> flatMap = list4.stream().flatMap(x -> x.stream())
+                .map(x->x.toUpperCase()).toList();
+        System.out.println(flatMap);//we can perform some opertions as well
     }
 
 }

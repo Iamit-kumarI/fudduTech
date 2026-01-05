@@ -41,5 +41,11 @@ public class TerminalOperations {
         System.out.println(list.stream().max(Comparator.naturalOrder()).get());
         System.out.println(list.stream().min((a,b)->b-a).get());
 
+        //8. forEachOrder
+        List<Integer>list1=Arrays.asList(1,2,3,4,5,6,7);
+        System.out.println("parallelStrem with forEach");
+        list1.parallelStream().forEach(System.out::println);
+        System.out.println("parallelStrem with forEachOrder");//things will parallelly but order will be maintained as well
+        list1.parallelStream().forEachOrdered(System.out::println);
     }
 }
