@@ -1,9 +1,6 @@
 package Collection.Streams;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class TerminalOperations {
@@ -39,6 +36,10 @@ public class TerminalOperations {
         //6. findFirst, findAny
         System.out.println(list.stream().findFirst().get());//returns first element onlu
         System.out.println(list.stream().findAny().get());//return any element
+
+        //7. min max
+        System.out.println(list.stream().max(Comparator.naturalOrder()).get());
+        System.out.println(list.stream().min((a,b)->b-a).get());
 
     }
 }

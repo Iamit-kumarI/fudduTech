@@ -38,6 +38,12 @@ public class Operation {
         //stateless -> don't know what happen with others just doing where currently at
         //statefull -> like sorted knows what was the last element, like distinct
 
+        //7. peek like forEach but it never terminate the process(its not a teminaloperation)
+        Stream.iterate(1,x->x+1).limit(100).peek(System.out::print).count();//peek is like for each but i dosent terminalte the process
+
+        //8. flatMap
+        //handle streams of collections, lists, or arrays, where each element itself is a collection
+        
     }
 
 }
