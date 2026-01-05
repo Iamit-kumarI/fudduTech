@@ -33,6 +33,9 @@ public class Operation {
 
         //6. skip
         System.out.println(Stream.iterate(1,x->x+1).skip(3).limit(15).toList());
+
+        // ________________________ StateFull && StateLess Operation _______________________
+        
     }
 
 }
