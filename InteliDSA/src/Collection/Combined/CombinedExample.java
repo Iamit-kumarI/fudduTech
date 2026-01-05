@@ -21,7 +21,7 @@ public class CombinedExample {
             System.out.println(x);
             System.out.println(y);
         };
-        BiFunction<Integer,Integer,Boolean>biFunction=(x,y)->x/y>6;
-        System.out.println(biFunction.apply(4,9));
+        BiFunction<String,String,Integer>biFunction=(x,y)->(x+y).length();
+        System.out.println(biFunction.apply("ab","c"));
     }
 }
