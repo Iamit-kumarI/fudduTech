@@ -1,5 +1,4 @@
-package StackANDQueue;
-import java.util.Queue;
+package StackANDQueue.Queue;
 import java.util.Stack;
 
 public class ImplementeQueueByStack {

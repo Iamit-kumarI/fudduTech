@@ -1,4 +1,4 @@
-package StackANDQueue;
+package StackANDQueue.Queue;
 
 public class DynamicQueue {
     // here is the cat if FIFO

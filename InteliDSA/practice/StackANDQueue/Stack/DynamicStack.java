@@ -1,4 +1,4 @@
-package StackANDQueue;
+package StackANDQueue.Stack;
 
 public class DynamicStack {
     //first in first out
