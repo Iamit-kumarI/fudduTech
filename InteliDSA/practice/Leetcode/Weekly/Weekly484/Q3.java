@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class Q3 {
     public long countPairs(String[] words) {
+        //not running for all cases
         HashMap<String,Integer> map=new HashMap<>();
         for(String curStr:words){
             String word=helper(curStr);
