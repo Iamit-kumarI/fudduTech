@@ -1,4 +1,4 @@
-package DP.StringDP;
+package DP.StringDP.LCSBased;
 
 import java.util.Arrays;
 

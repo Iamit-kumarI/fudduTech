@@ -1,4 +1,4 @@
-package DP.StringDP;
+package DP.StringDP.LCSBased;
 
 public class LongestCommonSubstriing {
     public static void main(String[] args) {
