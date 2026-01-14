@@ -16,10 +16,10 @@ public class BFSTraversal {
         while(!queue.isEmpty()){
             Integer cur=queue.poll();
             list.add(cur);
-            for(Integer val:adj.get(cur)){
-                if(!visited[val]){
-                    visited[val]=true;
-                    queue.offer(val);
+            for(Integer node:adj.get(cur)){
+                if(!visited[node]){
+                    visited[node]=true;
+                    queue.offer(node);
                 }
             }
         }
