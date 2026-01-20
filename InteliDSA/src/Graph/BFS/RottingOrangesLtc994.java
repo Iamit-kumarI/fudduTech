@@ -15,7 +15,6 @@ public class RottingOrangesLtc994 {
             this.time=time;
         }
     }
-
     public int orangesRotting(int[][] grid) {
         int n=grid.length,m=grid[0].length;
         Queue<pair> queue=new LinkedList<>();
