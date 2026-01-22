@@ -7,7 +7,7 @@ public class LRUImplementation {
     public static void main(String[] args) {
         LinkedHashMap<String,Integer>map=new LinkedHashMap<>(3,0.75f,true) {
             @Override
-            public boolean removeEldestEntry(Map.Entry<String, Integer> map) {
+            public boolean removeEldestEntry(Map.Entry<String, Integer> LRU) {
                 return size()>3;
             }
         };
