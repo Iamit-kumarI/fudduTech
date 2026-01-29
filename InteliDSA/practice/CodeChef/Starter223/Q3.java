@@ -1,4 +1,4 @@
-package CodeChef.Starter222;
+package CodeChef.Starter223;
 
 import java.util.Scanner;
 
