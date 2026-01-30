@@ -3,17 +3,21 @@ package Multithreading.ImpMethods;
 public class MyThread extends Thread{
     @Override
     public void run() {
-        for(int i=0;i<=5;i++){
+        while(true){
             System.out.println(Thread.currentThread().getName()+" is Running ");
-            Thread.yield();//means we are telling thread that give change to other thred
         }
     }
 
     public static void main(String[] args) {
         MyThread t1=new MyThread(); //giving thread name by its constructor
-        MyThread t2=new MyThread();
+        t1.setDaemon(true);
         t1.start();
-        t2.start();
-        t1.interrupt();
+        System.out.println("Main done");
     }
 }
+/* here is the explanation
+        once we set current thread deamon it kills it self how once it created t1  and set deamon
+        done now it will start so as it will start it will go to the @Override run() and done some
+        work in parallel same time it print main done now it comes to know nothing  left in main to
+        do and i am set to deamon so it will destroy it self
+ */
