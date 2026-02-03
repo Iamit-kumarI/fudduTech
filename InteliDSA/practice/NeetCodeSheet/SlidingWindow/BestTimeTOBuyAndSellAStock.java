@@ -6,11 +6,12 @@ public class BestTimeTOBuyAndSellAStock {
         System.out.println(maxProfit(arr));
     }
     public static int maxProfit(int[] prices) {
-        int max=0;
-        for(int i=0;i<prices.length;i++){
-            for(int j=i+1;j<prices.length;j++){
-                if(prices[i]>prices[j])continue;
-                max=Math.max(max,Math.abs(prices[i]-prices[j]));
+        int max=0,minPrice=Integer.MAX_VALUE;
+        for(int price:prices){
+            if(price>minPrice){
+                minPrice=price;
+            }else{
+                max=Math.max(max,price-minPrice);
             }
         }
         return max;
