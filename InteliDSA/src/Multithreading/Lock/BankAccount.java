@@ -22,7 +22,8 @@ public class BankAccount {
                        System.out.println(Thread.currentThread().getName()+" Completed withdrwa, Remaning amoutn is : "+balance);
 
                    }catch (Exception e){
-                       System.out.println("Exception in the process of withdrawl, Try Again");
+//                       System.out.println("Exception in the process of withdrawl, Try Again");//not good practice
+                        Thread.currentThread().interrupt();
                    }finally {
                        //it is very importent to release the lock we have acquired
                        lock.unlock();
@@ -30,7 +31,8 @@ public class BankAccount {
                 }else System.out.println(Thread.currentThread().getName()+" Insufficent balance");
             }else System.out.println(Thread.currentThread().getName()+" Couldn't acquire lock, Try Again");
         } catch (Exception e) {
-            System.out.println(Thread.currentThread().getName()+" Can't find lock");
+//            System.out.println(Thread.currentThread().getName()+" Can't find lock"); //not good practice
+            Thread.currentThread().interrupt();
         }
     }
 }
