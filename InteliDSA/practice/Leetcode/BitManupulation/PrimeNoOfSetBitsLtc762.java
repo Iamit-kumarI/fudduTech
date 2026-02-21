@@ -10,27 +10,8 @@ public class PrimeNoOfSetBitsLtc762 {
     }
     public static int countPrimeSetBits(int left, int right) {
         int count=0;
-        int[]arr=new int[right-left];
-        Arrays.fill(arr,-1);
-        while(left<=right){
-            int curNo=left;
-            int setBit=0;
-            while(curNo>0){
-                if((curNo&1)==1)setBit++;
-                curNo=curNo>>1;
-            }
-            if(arr[setBit]!=-1){
-                count++;
-                left++;
-                continue;
-            }
-            else if(isPrime(setBit)){
-                arr[setBit]=1;
-                count++;
-            }else{
-                arr[setBit]=0;
-            }
-            left++;
+        while (left<=right){
+            if(isPrime(Integer.bitCount(left++)))count++;
         }
         return count;
     }
