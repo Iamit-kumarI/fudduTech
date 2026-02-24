@@ -13,5 +13,9 @@ public class Seet {
         for(Map.Entry<Integer,String>enteries:db.entrySet()){
             System.out.print(enteries.getValue()+" ");
         }
+        ArrayList<Integer>list=new ArrayList<>();
+        for(int i=0;i<5;i++)list.add(i);
+        int sum = list.stream().mapToInt(x -> x).sum();
+        System.out.println(sum);
     }
 }
