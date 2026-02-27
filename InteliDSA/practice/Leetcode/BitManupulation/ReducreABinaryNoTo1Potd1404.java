@@ -5,7 +5,6 @@ public class ReducreABinaryNoTo1Potd1404 {
         System.out.println(numSteps("1101"));
     }
     public static int numSteps(String s) {
-        //tle
         StringBuilder sb=new StringBuilder(s);
         int count=0;
         sb.reverse();
@@ -24,6 +23,7 @@ public class ReducreABinaryNoTo1Potd1404 {
             count++;
         }
         return count;
+        //tle
 //        int sum=0;
 //        for(char c:s.toCharArray()){
 //            if(c=='0'){
