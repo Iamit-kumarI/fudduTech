@@ -1,4 +1,4 @@
-package Codeforces;
+package Codeforces.Round1052;
 
 import java.util.Scanner;
 
