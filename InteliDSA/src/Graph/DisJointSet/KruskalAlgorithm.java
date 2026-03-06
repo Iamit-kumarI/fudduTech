@@ -1,7 +1,5 @@
 package Graph.DisJointSet;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class KruskalAlgorithm {
@@ -29,7 +27,7 @@ public class KruskalAlgorithm {
             pq.add(new Pair(row[2],row[1],row[0]));
         }
         //now priority queue is prepared just chekc if element already exist in the graph or not
-        DisjointSet ds=new DisjointSet(V);
+        DisjointSetPractice ds=new DisjointSetPractice(V);
         int sum=0;
         while(!pq.isEmpty()){
             Pair cur=pq.poll();

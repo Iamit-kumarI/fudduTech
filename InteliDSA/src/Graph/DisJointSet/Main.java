@@ -3,7 +3,7 @@ package Graph.DisJointSet;
 public class Main {
     public static void main(String[] args) {
         //implementing disjoint set
-        DisjointSet disjointSet=new DisjointSet(7);
+        DisjointSetPractice disjointSet=new DisjointSetPractice(7);
         disjointSet.unionByRank(1,2);
         disjointSet.unionByRank(2,3);
         disjointSet.unionByRank(4,5);
