@@ -22,9 +22,9 @@ public class DisjointSetPractice {
         int ultiMateParentU=findParent(u);
         int ultiMateParentV=findParent(v);
         if(ultiMateParentV==ultiMateParentU)return;
-        if(parent.get(ultiMateParentV)<parent.get(ultiMateParentU)){
+        if(rank.get(ultiMateParentV)<rank.get(ultiMateParentU)){
             parent.set(ultiMateParentV,ultiMateParentU);
-        }else if(parent.get(ultiMateParentU)<parent.get(ultiMateParentV)){
+        }else if(rank.get(ultiMateParentU)<rank.get(ultiMateParentV)){
             parent.set(ultiMateParentU,ultiMateParentV);
         }else{
             parent.set(ultiMateParentV,ultiMateParentU);
