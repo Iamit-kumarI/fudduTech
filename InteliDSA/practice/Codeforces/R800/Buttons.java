@@ -7,7 +7,17 @@ public class Buttons {
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while(t-->0){
-            
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            int c=sc.nextInt();
+            if(a>b) System.out.println("First");
+            else{
+                if(a==b){
+                    if(c%2==0) System.out.println("Second");
+                    else System.out.println("First");
+                }
+                if(b>a) System.out.println("Second");
+            }
         }
     }
 }
