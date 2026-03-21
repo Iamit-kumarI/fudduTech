@@ -6,13 +6,16 @@ public class MaximumConsitutiveOneIII {
         System.out.println(longestOnes(arr,2));
     }
     public static int longestOnes(int[] nums, int k) {
-        int one=0,zero=0,max=0;
-        for(int val:nums){
-            if(val==1)one++;
-            else zero++;
-            if(zero==k&&one!=0)one+=2;
-            if(zero>k)one=0;
-            max=Math.max(one,max);
+        int left=0,right=0,zeroCount=0,max=0;
+        while(right<nums.length){
+            if(nums[right]==0)zeroCount++;
+            while(zeroCount>k){
+                if(nums[left]==0)zeroCount--;
+                left++;
+            }
+            int curWindow=right-left+1;
+            if(curWindow>max)max=curWindow;
+            right++;
         }
         return max;
     }
