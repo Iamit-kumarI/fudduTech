@@ -1,8 +1,6 @@
 package TwoPointerSlidingWIndow;
 
-import java.util.Arrays;
-
-public class FruiteIntoBasket {
+public class FruiteIntoBasketII {
     public static void main(String[] args) {
         int[]arrf={4,2,5};
         int[]arrb={3,5,4};
