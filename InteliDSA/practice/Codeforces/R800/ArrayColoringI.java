@@ -1,4 +1,4 @@
-//package Codeforces.R800;
+package Codeforces.R800;
 
 import java.util.Arrays;
 import java.util.HashMap;
