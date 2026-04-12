@@ -1,0 +1,12 @@
+package CodeChef.Starter217;
+
+import java.util.Scanner;
+
+public class A {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        System.out.println(n-m<0?0:n-m);
+    }
+}
