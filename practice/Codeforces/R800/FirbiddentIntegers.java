@@ -2,7 +2,7 @@ package Codeforces.R800;
 
 import java.util.Scanner;
 
-public class ForbiddenIntegers {
+public class FirbiddentIntegers {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
@@ -10,14 +10,10 @@ public class ForbiddenIntegers {
             int n=sc.nextInt();
             int k=sc.nextInt();
             int x=sc.nextInt();
-            if(k==1) System.out.println("No");
+
+            if(x==1) System.out.println("Yes");
             else{
-                System.out.println("Yes");
-                System.out.println(n);
-                while(n>0){
-                    System.out.print(1);
-                    n--;
-                }
+
             }
         }
     }
