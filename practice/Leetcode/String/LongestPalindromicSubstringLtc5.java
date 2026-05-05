@@ -2,7 +2,8 @@ package Leetcode.String;
 
 public class LongestPalindromicSubstringLtc5 {
     public static void main(String[] args) {
-        System.out.println(longestPalindrome("babad"));
+//        System.out.println(longestPalindrome("babad"));
+
     }
     public static String longestPalindrome(String s) {
         int n=s.length(),max=0,start=0,end=0;
