@@ -49,6 +49,5 @@ public class JumpGameIV {
             ans++;
         }
         return -1;
-
     }
 }
